@@ -90,7 +90,7 @@ Set the model path in `.../Cholec80/train.sh` and
 source .../Cholec80/train.sh
 ```
 
-### Our trained checkpoints can be download in github Releases
+### Our trained checkpoints can be download in [google drive](https://drive.google.com/file/d/1L6PmReQY2w_3FAcSgtDYf8PnSjU_auVr/view?usp=drive_link).
 
 ## 4. Evaluate
 
