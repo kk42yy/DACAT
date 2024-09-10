@@ -1,5 +1,20 @@
 # DACAT: Dual-stream Adaptive Clip-aware Time Modeling for Robust Online Surgical Phase Recognition
 
+<div align="center">
+<h2>DACAT</h2>
+<p align="center">
+    <img src="fig/DACAT.png"/ width=1000> <br />
+</p>
+</div>
+
+DACAT consists of two main branches, $\textit{i.e.}$, (i) Frame-wise Branch (FWB) processing the frame-wise feature and (ii) Adaptive Clip-aware Branch (ACB) which reads out the most relevant clip with the current frame from pre-trained feature cache and integrates these frame-wise features into adaptive clip-aware feature through cross-attention (CA) module. DACAT enhances the relevant context and filter out interference for current frame, which reduces the the complexity of temporal processing and leads to more accurate phase identification.
+
+<div align="center">
+<h2>Result</h2>
+<p align="center">
+    <img src="fig/Result.png"/ width=1000> <br />
+</p>
+</div>
 
 ## 1. Preparation
 
@@ -76,18 +91,18 @@ See [requirements.txt](requirements.txt).
 ```bash
 source .../Cholec80/train.sh
 ```
-Rename and save the checkpoint `checkpoint_best_acc.pth.tar` in `.../train_scripts/newly_opt_ykx/LongShortNet/long_net_convnextv2.pth.tar`
+After training, please rename and save the checkpoint `.../output/checkpoints/phase/YourTrainNameXXX/models/checkpoint_best_acc.pth.tar` in `.../train_scripts/newly_opt_ykx/LongShortNet/long_net_convnextv2.pth.tar`
 
 ### 2.2 Train DACAT
-Change the `.../Cholec80/train.sh`, set `python3 train_longshort.py` and 
+Change the `.../Cholec80/train.sh`, make `python3 train_longshort.py` active and 
 ```bash
 source .../Cholec80/train.sh
 ```
 
 ## 3. Infer
-Set the model path in `.../Cholec80/train.sh` and 
+Set the model path in `.../Cholec80/predict.sh` and 
 ```bash
-source .../Cholec80/train.sh
+source .../Cholec80/predict.sh
 ```
 
 ### Our trained checkpoints can be download in [google drive](https://drive.google.com/file/d/1L6PmReQY2w_3FAcSgtDYf8PnSjU_auVr/view?usp=drive_link).
@@ -105,3 +120,14 @@ Use the [Python file](src/AutoLaparo/train_scripts/newly_opt_ykx/evaluation_tota
 
 ## Reference
 * [BNPitfalls (MIA 24)](https://gitlab.com/nct_tso_public/pitfalls_bn)
+
+# Citations
+If you find this repository useful, please consider citing our paper:
+```
+@article{yang2024demoseg,
+  title={Decoupling Feature Representations of Ego and Other Modalities for Incomplete Multi-modal Brain Tumor Segmentation},
+  author={Yang, Kaixiang and Shan, Wenqi and Li, Xudong and Wang, Xuan and Yang, Xikai and Wang, Xi and Heng, Pheng-Ann and Li, Qiang and Wang, Zhiwei},
+  journal={arXiv preprint arXiv:2408.08708},
+  year={2024}
+}
+```
