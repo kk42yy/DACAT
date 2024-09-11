@@ -124,10 +124,10 @@ Use the [Python file](src/AutoLaparo/train_scripts/newly_opt_ykx/evaluation_tota
 # Citations
 If you find this repository useful, please consider citing our paper:
 ```
-@article{yang2024demoseg,
-  title={Decoupling Feature Representations of Ego and Other Modalities for Incomplete Multi-modal Brain Tumor Segmentation},
-  author={Yang, Kaixiang and Shan, Wenqi and Li, Xudong and Wang, Xuan and Yang, Xikai and Wang, Xi and Heng, Pheng-Ann and Li, Qiang and Wang, Zhiwei},
-  journal={arXiv preprint arXiv:2408.08708},
+@article{yang2024dacat,
+  title={DACAT: Dual-stream Adaptive Clip-aware Time Modeling for Robust Online Surgical Phase Recognition},
+  author={Yang, Kaixiang and Li, Qiang and Wang, Zhiwei},
+  journal={arXiv preprint arXiv:2409.06217},
   year={2024}
 }
 ```
