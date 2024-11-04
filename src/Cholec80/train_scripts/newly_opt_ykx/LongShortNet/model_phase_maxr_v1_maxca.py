@@ -298,16 +298,16 @@ class PhaseModel(nn.Module):
 
 			if f1_val > self.best_f1:
 				model_file_path = os.path.join(self.model_folder,'checkpoint_best_f1.pth.tar')
-				# torch.save(checkpoint, model_file_path)
+				torch.save(checkpoint, model_file_path)
 				self.best_f1 = f1_val
 
 			if acc_val > self.best_acc:
 				model_file_path = os.path.join(self.model_folder,'checkpoint_best_acc.pth.tar')
-				# torch.save(checkpoint, model_file_path)
+				torch.save(checkpoint, model_file_path)
 				self.best_acc = acc_val
 
-			model_file_path = os.path.join(self.model_folder,f'checkpoint_{epoch}.pth.tar')
-			torch.save(checkpoint, model_file_path)
+			# model_file_path = os.path.join(self.model_folder,f'checkpoint_{epoch}.pth.tar')
+			# torch.save(checkpoint, model_file_path)
 
 			print(log_message)
 			log_file.write(log_message + '\n')
