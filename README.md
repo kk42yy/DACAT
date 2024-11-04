@@ -115,7 +115,7 @@ Use the [Matlab file](src/matlab-eval/Main.m).
 ### 4.2 M2CAI16
 Use the [Matlab file](src/matlab-eval/Main_m2cai.m).
 
-### 4.3 Cholec80
+### 4.3 AutoLaparo
 Use the [Python file](src/AutoLaparo/train_scripts/newly_opt_ykx/evaluation_total.py/#L66).
 
 ## Reference
