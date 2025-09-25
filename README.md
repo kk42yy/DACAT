@@ -124,10 +124,12 @@ Use the [Python file](src/AutoLaparo/train_scripts/newly_opt_ykx/evaluation_tota
 # Citations
 If you find this repository useful, please consider citing our paper:
 ```
-@article{yang2024dacat,
-  title={DACAT: Dual-stream Adaptive Clip-aware Time Modeling for Robust Online Surgical Phase Recognition},
+@inproceedings{yang2025dacat,
+  title={Dacat: Dual-stream adaptive clip-aware time modeling for robust online surgical phase recognition},
   author={Yang, Kaixiang and Li, Qiang and Wang, Zhiwei},
-  journal={arXiv preprint arXiv:2409.06217},
-  year={2024}
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
 }
 ```
